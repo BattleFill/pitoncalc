@@ -105,6 +105,9 @@ while True:
                 break
             except ValueError:
                 print("That was no valid number. Try again...")
+        while chislo1 < 0:
+            print("You need number with +")
+            chislo1 = float(input("Enter a number: "))
         result = math.sqrt(chislo1)
         print(result)
     elif vibor == 7:
